@@ -1,0 +1,10 @@
+get_node_u_gbl(model::Model, nid::Int) = model.nodes[nid].state.u_c
+get_node_q_gbl(model::Model, nid::Int) = model.nodes[nid].state.q_c
+get_node_r_gbl(model::Model, nid::Int) = model.nodes[nid].state.r_c
+get_element_u_bsc(model::Model, eid::Int) = model.elements[eid].state.u_bsc_c
+get_element_q_bsc(model::Model, eid::Int) = model.elements[eid].state.q_bsc_c
+get_element_k_bsc(model::Model, eid::Int) = model.elements[eid].state.k_bsc_c
+get_element_u_gbl(model::Model, eid::Int) = _get_u_gbl(model.elements[eid])
+get_element_q_gbl(model::Model, eid::Int) = _get_q_gbl(model.elements[eid])
+get_element_k_gbl(model::Model, eid::Int) = _get_k_gbl(model.elements[eid])
+get_model_λ(model::Model) = model.λ[]

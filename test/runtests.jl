@@ -1,6 +1,7 @@
 using Test
-using Titan
-using DifferentiationInterface, FiniteDiff, ForwardDiff, ReverseDiff
+using Structura
+using DifferentiationInterface
+using FiniteDiff
+using ForwardDiff
 
-@testset verbose = true "Automatic differentiation"  include("AutomaticDifferentiation.jl")
-@testset verbose = true "Denavit and Hajjar (2013)"  include("Denavit and Hajjar (2013).jl")
+include("CantileverBeam.jl")

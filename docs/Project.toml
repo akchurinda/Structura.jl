@@ -1,4 +1,0 @@
-[deps]
-CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
-Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
-Titan = "bfe7e8f3-634c-4759-86cf-c7631eccc6cf"
